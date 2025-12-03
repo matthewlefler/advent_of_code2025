@@ -1,3 +1,10 @@
+# exes
+c1
+c2
+
+# input files that are not supposed to be shared
+*.txt
+
 # Prerequisites
 *.d
 
