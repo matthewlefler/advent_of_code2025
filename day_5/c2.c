@@ -64,6 +64,7 @@ int main(int argc, char *argv[]) {
             
             if( overlap_start <= overlap_end ) {
                 total -= overlap_end - overlap_start + 1;
+                printf("found overlap: %lld - %lld \n", overlap_start, overlap_end);
             }
         }
     }
