@@ -52,7 +52,7 @@ int main(int argc, char *argv[]) {
         if(operator == '\0') {
             break;
         }
-        printf("\nop: %c\n", operator);
+        //printf("\nop: %c\n", operator);
 
         size_t next_operator_pos = operator_pos + 1;
         while( input[line_count - 1][next_operator_pos] != '\0' && input[line_count - 1][next_operator_pos] != '+' && input[line_count - 1][next_operator_pos] != '*') { 
@@ -78,7 +78,7 @@ int main(int argc, char *argv[]) {
             }
             buf[buf_len] = '\0';
             numbers[operator_idx][number_idx] = strtol(buf, NULL, 10);
-            printf("%lld\n", numbers[operator_idx][number_idx]);
+            //printf("%lld\n", numbers[operator_idx][number_idx]);
             number_idx++;
         }
         outputs_len[operator_idx] = number_idx;
@@ -107,7 +107,7 @@ int main(int argc, char *argv[]) {
     
     for (size_t i = 0; i < operator_idx; i++)
     {
-        printf("out: %lld \n", outputs[i]);
+        //printf("out: %lld \n", outputs[i]);
         total += outputs[i];
     }
     
